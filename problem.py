@@ -4,13 +4,16 @@ import pandas as pd
 import rampwf as rw
 from rampwf.workflows import FeatureExtractorClassifier
 from rampwf.score_types.base import BaseScoreType
-from sklearn.model_selection import GroupShuffleSplit
+from sklearn.model_selection import StratifiedShuffleSplit
+from collections import Counter
 from sklearn.metrics import f1_score
-
+import os
+import tensorflow as tf
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 problem_title = 'Arabic News Category prediction'
 _target_column_name = 'Type'
-_prediction_label_names = ['أخبار محليّة', 'أخبار فنية', 'أخبار اقتصادية ومالية', 'أخبار رياضية', 'أخبار إقليمية ودولية']
+_prediction_label_names = [0, 1, 2, 3, 4]
 # A type (class) which will be used to create wrapper objects for y_pred
 Predictions= rw.prediction_types.make_multiclass(label_names=_prediction_label_names)
 # An object implementing the workflow
@@ -27,26 +30,32 @@ class F1Score(BaseScoreType):
     minimum = 0.0
     maximum = 1.0
 
-    def __init__(self, name='f1 score'):
+    def __init__(self, name='f1 score', precision=3):
         self.name = name
+        self.precision = precision
 
     def __call__(self, y_true, y_pred):
-        if isinstance(y_true, pd.Series):
-            y_true = y_true.values
+
+        y_true = np.argmax(y_true, -1)
+        y_pred = np.argmax(y_pred, -1)
+    
         return f1_score(y_true, y_pred, average='weighted')
 
 
 score_types= [
-    F1Score(name='f1 score'),
+    F1Score(name='f1 score',precision=3),
 ]
 
 def get_cv(X, y):
-    cv= GroupShuffleSplit(n_splits=8, test_size=0.20, random_state=42)
-    return cv.split(X, y, groups=X['Id'])
+    cv= StratifiedShuffleSplit(n_splits=5, test_size=0.2, random_state=42)
+    return cv.split(X, y)
 
 def _read_data(path, f_name):
     data = pd.read_csv(os.path.join(path, 'data', f_name), low_memory=False, compression='zip')
     y_array = data[_target_column_name].values
+    categories = ['أخبار محليّة', 'أخبار فنية', 'أخبار اقتصادية ومالية', 'أخبار رياضية', 'أخبار إقليمية ودولية']
+    class2index = dict(zip(categories, range(len(categories))))
+    y_array = np.array([class2index[cat] for cat in y_array])
     X_df = data.drop(_target_column_name, axis=1)
     return X_df, y_array
 
