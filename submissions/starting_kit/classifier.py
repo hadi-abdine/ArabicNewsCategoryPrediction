@@ -13,9 +13,17 @@ class Classifier(object):
         self.EMBEDDING_DIM = 100
         self.model = Sequential()
         self.enc = preprocessing.OneHotEncoder()
+        os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+        K.clear_session()
+        self.model.add(Embedding(self.vocab_size, self.EMBEDDING_DIM, input_length=self.max_length))
+        self.model.add(SpatialDropout1D(0.25))
+        self.model.add(LSTM(32))
+        self.model.add(Dense(5, activation='softmax'))
+        self.model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=[self.get_f1])
+        os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
-    @staticmethod
-    def get_f1(y_true, y_pred):
+    #@staticmethod
+    def get_f1(self, y_true, y_pred):
         
         y_true = K.argmax(y_true, -1)
         y_pred = K.argmax(y_pred, -1)
@@ -46,18 +54,13 @@ class Classifier(object):
         return f1_val
 
     def fit(self, X, y):
-        K.clear_session()
         self.enc.fit(y.reshape(-1, 1))
         Y_train = self.enc.transform(y.reshape(-1, 1)).toarray()
-        self.model.add(Embedding(self.vocab_size, self.EMBEDDING_DIM, input_length=self.max_length))
-        self.model.add(SpatialDropout1D(0.15))
-        self.model.add(LSTM(100))
-        self.model.add(Dense(5, activation='softmax'))
-        self.model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['categorical_accuracy', self.get_f1])
-
-        self.model.fit(X[1], Y_train, epochs=5, batch_size=64, verbose=True)
+        os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+        self.model.fit(X[1], Y_train, epochs=4, batch_size=32, verbose=0)
     
     def predict_proba(self, X):
+        os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
         return self.model.predict_proba(X[1])
 
 
