@@ -2,3 +2,7 @@ numpy
 scipy
 pandas
 matplotlib
+keras
+tensorflow
+scikit-learn
+ramp workflow
