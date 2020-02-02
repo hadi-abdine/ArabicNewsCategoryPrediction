@@ -1,5 +1,5 @@
 # Arabic News Category Prediction
-![]images/nbviewer_badge.png
+![](images/nbviewer.png)
 
 ***Aurhors: Hadi Abdine, Ahmad Chamma, Youssef Farhat.***
 
