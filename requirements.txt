@@ -6,5 +6,8 @@ keras
 tensorflow
 scikit-learn
 ramp workflow
+<<<<<<< HEAD
 arabic_reshaper
 bidi.algorithm
+=======
+>>>>>>> 4f9edf190b26d29bf862be2e253c01fee00a5e7b
