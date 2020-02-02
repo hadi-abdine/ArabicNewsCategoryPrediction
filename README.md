@@ -1,5 +1,5 @@
 # Arabic News Category Prediction
-![](images/nbviewer.png)
+<a href="https://nbviewer.jupyter.org/github/hadi-abdine/ArabicNewsCategoryPrediction/blob/master/ArabicNewsCategoryPrediction_starting_kit.ipynb"><img src='images/nbviewer.png'></a>
 
 ***Aurhors: Hadi Abdine, Ahmad Chamma, Youssef Farhat.***
 
