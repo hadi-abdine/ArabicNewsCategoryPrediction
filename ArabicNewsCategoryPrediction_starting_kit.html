@@ -13077,10 +13077,12 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img border="0" src="https://www.polytechnique.edu/sites/all/institutionnel/institutpolytechniqueparis_logohorizontal.png" width="90%"> &lt;/td&gt;</p>
+<p><img border="0" src="https://www.polytechnique.edu/sites/all/institutionnel/institutpolytechniqueparis_logohorizontal.png" width="90%"></p>
 <center><h1>Arabic News Category Prediction Challenge (ANCP)</h1></center>
 <br/>
 <center>Ahmad CHAMMA, Hadi ABDINE, Youssef FARHAT</center>
+<br/>
+<center>Prof: Alexandre Gramfort, Thomas Moreau</center>
 </div>
 </div>
 </div>
@@ -13402,7 +13404,7 @@ The task to challenge here is to construct a good and robust nlp model in order 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">bidi.algorithm</span> <span class="kn">import</span> <span class="n">get_display</span>
@@ -13444,7 +13446,7 @@ The task to challenge here is to construct a good and robust nlp model in order 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">problem</span> <span class="kn">import</span> <span class="n">get_train_data</span>
@@ -13458,7 +13460,7 @@ The task to challenge here is to construct a good and robust nlp model in order 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -13474,7 +13476,7 @@ The task to challenge here is to construct a good and robust nlp model in order 
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[0]:</div>
 
 
 
@@ -13558,7 +13560,7 @@ The task to challenge here is to construct a good and robust nlp model in order 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_df</span><span class="o">.</span><span class="n">shape</span>
@@ -13574,7 +13576,7 @@ The task to challenge here is to construct a good and robust nlp model in order 
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt output_prompt">Out[0]:</div>
 
 
 
@@ -13591,7 +13593,7 @@ The task to challenge here is to construct a good and robust nlp model in order 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># proportion of NaN values</span>
@@ -13608,7 +13610,7 @@ The task to challenge here is to construct a good and robust nlp model in order 
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[0]:</div>
 
 
 
@@ -13630,7 +13632,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># number of unique values</span>
@@ -13647,7 +13649,7 @@ dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[0]:</div>
 
 
 
@@ -13669,7 +13671,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_df</span><span class="o">.</span><span class="n">dtypes</span>
@@ -13685,7 +13687,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[0]:</div>
 
 
 
@@ -13707,7 +13709,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_df</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
@@ -13723,7 +13725,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[0]:</div>
 
 
 
@@ -13863,7 +13865,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
@@ -13983,7 +13985,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># list of numerical columns</span>
@@ -13997,7 +13999,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">numeric_transformer</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">(</span><span class="n">steps</span><span class="o">=</span><span class="p">[</span>
@@ -14020,7 +14022,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">process_date</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
@@ -14221,7 +14223,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stps_arabic</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;arabic&#39;</span><span class="p">))</span>
@@ -14278,7 +14280,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">process_text</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
@@ -14297,7 +14299,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.preprocessing.text</span> <span class="kn">import</span> <span class="n">Tokenizer</span>
@@ -14330,7 +14332,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.base</span> <span class="kn">import</span> <span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">TransformerMixin</span>
@@ -14376,7 +14378,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">num_col</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Id&#39;</span><span class="p">]</span>
@@ -14403,7 +14405,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># make sure it works</span>
@@ -14418,7 +14420,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span>
@@ -14434,7 +14436,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[0]:</div>
 
 
 
@@ -14480,7 +14482,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">id_to_word</span> <span class="o">=</span> <span class="p">{</span><span class="n">value</span><span class="p">:</span><span class="n">key</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span><span class="n">value</span> <span class="ow">in</span> <span class="n">text_preprocessor</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">word_index</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
@@ -14535,7 +14537,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">preprocessing</span>
@@ -14551,7 +14553,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_array</span>
@@ -14567,7 +14569,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[0]:</div>
 
 
 
@@ -14584,7 +14586,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Y_train</span>
@@ -14600,7 +14602,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[23]:</div>
+    <div class="prompt output_prompt">Out[0]:</div>
 
 
 
@@ -14639,7 +14641,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_f1</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">):</span>
@@ -14696,7 +14698,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">K</span><span class="o">.</span><span class="n">clear_session</span><span class="p">()</span>
@@ -14709,7 +14711,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create_model</span><span class="p">():</span>
@@ -14734,7 +14736,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.wrappers.scikit_learn</span> <span class="kn">import</span> <span class="n">KerasClassifier</span>
@@ -14748,7 +14750,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">create_model</span><span class="p">()</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
@@ -14810,7 +14812,7 @@ _________________________________________________________________
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">StratifiedKFold</span>
@@ -14831,7 +14833,7 @@ _________________________________________________________________
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">f1_score</span>
@@ -14899,7 +14901,7 @@ mean: 8.482821e-01 (+/- 6.029652e-03)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">problem</span> <span class="kn">import</span> <span class="n">get_test_data</span>
@@ -14915,7 +14917,7 @@ mean: 8.482821e-01 (+/- 6.029652e-03)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">),</span> <span class="n">average</span><span class="o">=</span><span class="s1">&#39;weighted&#39;</span><span class="p">)</span>
@@ -14931,7 +14933,7 @@ mean: 8.482821e-01 (+/- 6.029652e-03)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[44]:</div>
+    <div class="prompt output_prompt">Out[0]:</div>
 
 
 
@@ -14956,7 +14958,7 @@ mean: 8.482821e-01 (+/- 6.029652e-03)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
@@ -14974,7 +14976,7 @@ mean: 8.482821e-01 (+/- 6.029652e-03)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[46]:</div>
+    <div class="prompt output_prompt">Out[0]:</div>
 
 
 
@@ -14995,7 +14997,7 @@ mean: 8.482821e-01 (+/- 6.029652e-03)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[107]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
@@ -15090,12 +15092,257 @@ hint: one can use attention model.</p>
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Load-features-extractor">Load features extractor<a class="anchor-link" href="#Load-features-extractor">&#182;</a></h4>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>ramp_test_submission
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">dateutil.parser</span> <span class="k">as</span> <span class="nn">dparser</span>
+<span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
+<span class="kn">import</span> <span class="nn">unicodedata</span> <span class="k">as</span> <span class="nn">ud</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">keras.preprocessing.text</span> <span class="kn">import</span> <span class="n">Tokenizer</span>
+<span class="kn">from</span> <span class="nn">keras.preprocessing.sequence</span> <span class="kn">import</span> <span class="n">pad_sequences</span>
+<span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
+<span class="kn">from</span> <span class="nn">keras.layers</span> <span class="kn">import</span> <span class="n">Embedding</span><span class="p">,</span> <span class="n">SpatialDropout1D</span><span class="p">,</span> <span class="n">LSTM</span><span class="p">,</span> <span class="n">Dense</span>
+<span class="kn">import</span> <span class="nn">keras.backend</span> <span class="k">as</span> <span class="nn">K</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
+<span class="kn">from</span> <span class="nn">sklearn.impute</span> <span class="kn">import</span> <span class="n">SimpleImputer</span>
+<span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <span class="n">ColumnTransformer</span>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">make_pipeline</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">FunctionTransformer</span>
+<span class="kn">from</span> <span class="nn">sklearn.base</span> <span class="kn">import</span> <span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">TransformerMixin</span>
+
+
+<span class="k">class</span> <span class="nc">FeatureExtractor</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X_df</span><span class="p">,</span> <span class="n">y_array</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X_df</span><span class="p">):</span>
+        <span class="n">X_encoded</span> <span class="o">=</span> <span class="n">X_df</span>
+
+        <span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span>
+        
+        <span class="n">numeric_transformer</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">(</span><span class="n">steps</span><span class="o">=</span><span class="p">[</span>
+            <span class="p">(</span><span class="s1">&#39;impute&#39;</span><span class="p">,</span> <span class="n">SimpleImputer</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s1">&#39;median&#39;</span><span class="p">))])</span>
+
+        <span class="k">def</span> <span class="nf">convert_to_date</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+            <span class="n">dicta</span> <span class="o">=</span>  <span class="p">{</span><span class="s2">&quot;كانون الثاني&quot;</span><span class="p">:</span> <span class="s2">&quot;january&quot;</span> <span class="p">,</span><span class="s2">&quot;شباط&quot;</span><span class="p">:</span> <span class="s2">&quot;february&quot;</span><span class="p">,</span> <span class="s2">&quot;أيار&quot;</span><span class="p">:</span> <span class="s2">&quot;may&quot;</span><span class="p">,</span>  <span class="s2">&quot;نيسان&quot;</span><span class="p">:</span> <span class="s2">&quot;April&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;آذار&quot;</span><span class="p">:</span> <span class="s2">&quot;march&quot;</span><span class="p">,</span> <span class="s2">&quot;حزيران&quot;</span><span class="p">:</span> <span class="s2">&quot;june&quot;</span><span class="p">,</span> <span class="s2">&quot;تموز&quot;</span><span class="p">:</span> <span class="s2">&quot;july&quot;</span><span class="p">,</span> <span class="s2">&quot;آب&quot;</span><span class="p">:</span> <span class="s2">&quot;august&quot;</span><span class="p">,</span> <span class="s2">&quot;أيلول&quot;</span><span class="p">:</span> <span class="s2">&quot;september&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;تشرين الأول&quot;</span><span class="p">:</span> <span class="s2">&quot;october&quot;</span><span class="p">,</span> <span class="s2">&quot;تشرين الثاني&quot;</span><span class="p">:</span> <span class="s2">&quot;november&quot;</span><span class="p">,</span> <span class="s2">&quot;كانون الأول&quot;</span><span class="p">:</span> <span class="s2">&quot;december&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;الاثنين&quot;</span><span class="p">:</span> <span class="s2">&quot;monday&quot;</span><span class="p">,</span> <span class="s2">&quot;الثلاثاء&quot;</span><span class="p">:</span> <span class="s2">&quot;tuesday&quot;</span><span class="p">,</span> <span class="s2">&quot;الأربعاء&quot;</span><span class="p">:</span> <span class="s2">&quot;wednesday&quot;</span><span class="p">,</span> <span class="s2">&quot;الخميس&quot;</span><span class="p">:</span> <span class="s2">&quot;thursday&quot;</span><span class="p">,</span> <span class="s2">&quot;الجمعة&quot;</span><span class="p">:</span> <span class="s2">&quot;friday&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;السبت&quot;</span><span class="p">:</span> <span class="s2">&quot;saturday&quot;</span><span class="p">,</span> <span class="s2">&quot;الأحد&quot;</span><span class="p">:</span> <span class="s2">&quot;sunday&quot;</span><span class="p">,</span> <span class="s2">&quot;السبت&quot;</span><span class="p">:</span> <span class="s2">&quot;saturday&quot;</span><span class="p">}</span>
+            <span class="n">x_new</span> <span class="o">=</span> <span class="n">x</span>
+            <span class="k">for</span> <span class="n">arabic</span><span class="p">,</span> <span class="n">english</span> <span class="ow">in</span> <span class="n">dicta</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="n">x_new</span> <span class="o">=</span> <span class="n">x_new</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">arabic</span><span class="p">,</span> <span class="n">english</span><span class="p">)</span>
+            <span class="n">x_new</span> <span class="o">=</span> <span class="n">dparser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">x_new</span><span class="p">,</span> <span class="n">fuzzy</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">x_new</span>
+        <span class="k">def</span> <span class="nf">process_date</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
+            <span class="n">date</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">Date</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">convert_to_date</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">c_</span><span class="p">[</span><span class="n">date</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">year</span><span class="p">,</span> <span class="n">date</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">date</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">day</span><span class="p">]</span>
+        <span class="n">date_transformer</span> <span class="o">=</span> <span class="n">FunctionTransformer</span><span class="p">(</span><span class="n">process_date</span><span class="p">,</span> <span class="n">validate</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+
+        <span class="k">def</span> <span class="nf">clean_txt</span><span class="p">(</span><span class="n">sent</span><span class="p">):</span>
+            <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">                text: a string</span>
+<span class="sd">                return: modified initial string</span>
+<span class="sd">            &quot;&quot;&quot;</span>    
+            <span class="n">stps_arabic</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;arabic&#39;</span><span class="p">))</span>
+            <span class="n">arabic_diacritics</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">                                        ّ    | # Tashdid</span>
+<span class="s2">                                        َ    | # Fatha</span>
+<span class="s2">                                        ً    | # Tanwin Fath</span>
+<span class="s2">                                        ُ    | # Damma</span>
+<span class="s2">                                        ٌ    | # Tanwin Damm</span>
+<span class="s2">                                        ِ    | # Kasra</span>
+<span class="s2">                                        ٍ    | # Tanwin Kasr</span>
+<span class="s2">                                        ْ    | # Sukun</span>
+<span class="s2">                                        ـ     # Tatwil/Kashida</span>
+<span class="s2">                                    &quot;&quot;&quot;</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">VERBOSE</span><span class="p">)</span>
+            <span class="n">sent</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">sent</span><span class="p">)</span>
+            <span class="n">text</span> <span class="o">=</span> <span class="n">sent</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+            <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;[</span><span class="se">\n\r\t\xa0</span><span class="s1">]&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+            <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">arabic_diacritics</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+            <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">text</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">ud</span><span class="o">.</span><span class="n">category</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;P&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">c</span><span class="o">.</span><span class="n">isdigit</span><span class="p">())</span>
+            <span class="n">res</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39; +&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+            <span class="k">return</span> <span class="p">[</span><span class="n">w</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="k">if</span> <span class="n">w</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stps_arabic</span><span class="p">]</span>
+
+        <span class="k">def</span> <span class="nf">process_text</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
+            <span class="n">X</span><span class="p">[</span><span class="s1">&#39;Desc&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="s1">&#39;Desc&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;str&#39;</span><span class="p">)</span>
+            <span class="n">X</span><span class="p">[</span><span class="s1">&#39;Title&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="s1">&#39;Title&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;str&#39;</span><span class="p">)</span>
+    
+            <span class="n">X</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">X</span><span class="p">[</span><span class="s1">&#39;Desc&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;Desc&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="s1">&#39;Title&#39;</span><span class="p">]</span>
+            <span class="n">X</span><span class="p">[</span><span class="s1">&#39;Desc&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="s1">&#39;Desc&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">clean_txt</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">c_</span><span class="p">[</span><span class="n">X</span><span class="p">[</span><span class="s1">&#39;Desc&#39;</span><span class="p">]]</span>
+
+        <span class="c1"># The maximum number of words to be used. (Most frequent)</span>
+        <span class="n">vocab_size</span> <span class="o">=</span> <span class="mi">20000</span>
+        <span class="c1"># The padding and truncating types used.</span>
+        <span class="n">trunc_type</span> <span class="o">=</span> <span class="s1">&#39;post&#39;</span>
+        <span class="n">padding_type</span> <span class="o">=</span> <span class="s1">&#39;post&#39;</span>
+        <span class="c1"># The OOV token (Out Of Vocabulary) will be included within the dictionary</span>
+        <span class="n">oov_tok</span> <span class="o">=</span> <span class="s1">&#39;&lt;OOV&gt;&#39;</span>
+        <span class="c1"># Max number of words in each complaint.</span>
+        <span class="n">MAX_SEQUENCE_LENGTH</span> <span class="o">=</span> <span class="mi">200</span>
+        <span class="c1"># This is fixed.</span>
+        <span class="n">EMBEDDING_DIM</span> <span class="o">=</span> <span class="mi">100</span>
+
+        <span class="k">class</span> <span class="nc">FeatureSelector</span><span class="p">(</span><span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">TransformerMixin</span><span class="p">):</span>
+            <span class="c1">#Class Constructor </span>
+            <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">oov_tok</span><span class="p">,</span> <span class="n">MAX_SEQUENCE_LENGTH</span><span class="p">,</span> <span class="n">padding_type</span><span class="p">,</span> <span class="n">trunc_type</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">feature_names</span> <span class="o">=</span> <span class="n">feature_names</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">tokenizer</span> <span class="o">=</span> <span class="n">Tokenizer</span><span class="p">(</span><span class="n">num_words</span><span class="o">=</span><span class="n">vocab_size</span><span class="p">,</span> <span class="n">oov_token</span><span class="o">=</span><span class="n">oov_tok</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">max_length</span> <span class="o">=</span> <span class="n">MAX_SEQUENCE_LENGTH</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">padding</span> <span class="o">=</span> <span class="n">padding_type</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">truncating</span> <span class="o">=</span> <span class="n">trunc_type</span>
+        
+            <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+                <span class="n">X_1</span> <span class="o">=</span> <span class="n">process_text</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="bp">self</span><span class="o">.</span><span class="n">feature_names</span><span class="p">])</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">tokenizer</span><span class="o">.</span><span class="n">fit_on_texts</span><span class="p">(</span><span class="n">X_1</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">])</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">word_index</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tokenizer</span><span class="o">.</span><span class="n">word_index</span>
+                <span class="k">return</span> <span class="bp">self</span>
+    
+            <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+                <span class="n">X_1</span> <span class="o">=</span> <span class="n">process_text</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="bp">self</span><span class="o">.</span><span class="n">feature_names</span><span class="p">])</span>
+                <span class="n">sequences</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tokenizer</span><span class="o">.</span><span class="n">texts_to_sequences</span><span class="p">(</span><span class="n">X_1</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">])</span>
+                <span class="n">X</span> <span class="o">=</span> <span class="n">pad_sequences</span><span class="p">(</span><span class="n">sequences</span><span class="p">,</span> <span class="n">maxlen</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">max_length</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">padding</span><span class="p">,</span> <span class="n">truncating</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">truncating</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">X</span>
+    
+            <span class="k">def</span> <span class="nf">fit_transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+        <span class="n">num_col</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Id&#39;</span><span class="p">]</span>
+        <span class="n">date_col</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">]</span>
+        <span class="n">text_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Desc&#39;</span><span class="p">,</span> <span class="s1">&#39;Title&#39;</span><span class="p">]</span>
+        <span class="n">drop_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Image&#39;</span><span class="p">]</span>
+
+        <span class="n">non_text_preprocessor</span> <span class="o">=</span> <span class="n">ColumnTransformer</span><span class="p">(</span>
+                <span class="n">transformers</span><span class="o">=</span><span class="p">[</span>
+                    <span class="p">(</span><span class="s1">&#39;date&#39;</span><span class="p">,</span> <span class="n">make_pipeline</span><span class="p">(</span><span class="n">date_transformer</span><span class="p">),</span> <span class="n">date_col</span><span class="p">),</span>
+                    <span class="p">(</span><span class="s1">&#39;num&#39;</span><span class="p">,</span> <span class="n">numeric_transformer</span><span class="p">,</span> <span class="n">num_col</span><span class="p">),</span>
+                    <span class="p">(</span><span class="s1">&#39;drop cols&#39;</span><span class="p">,</span> <span class="s1">&#39;drop&#39;</span><span class="p">,</span> <span class="n">drop_cols</span><span class="p">),</span>
+                    <span class="p">])</span>
+
+        <span class="n">text_preprocessor</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">(</span><span class="n">steps</span><span class="o">=</span><span class="p">[</span>
+            <span class="p">(</span><span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="n">FeatureSelector</span><span class="p">(</span><span class="n">text_cols</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">oov_tok</span><span class="p">,</span> <span class="n">MAX_SEQUENCE_LENGTH</span><span class="p">,</span> <span class="n">padding_type</span><span class="p">,</span> <span class="n">trunc_type</span><span class="p">)),</span>
+        <span class="p">])</span>
+        <span class="n">X_train</span> <span class="o">=</span> <span class="n">text_preprocessor</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_df</span><span class="p">)</span>
+        <span class="n">X_extra</span> <span class="o">=</span> <span class="n">non_text_preprocessor</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_df</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">X_extra</span><span class="p">,</span> <span class="n">X_train</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Load-Classifier">Load Classifier<a class="anchor-link" href="#Load-Classifier">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
+<span class="kn">from</span> <span class="nn">keras.layers</span> <span class="kn">import</span> <span class="n">Embedding</span><span class="p">,</span> <span class="n">SpatialDropout1D</span><span class="p">,</span> <span class="n">LSTM</span><span class="p">,</span> <span class="n">Dense</span>
+<span class="kn">import</span> <span class="nn">keras.backend</span> <span class="k">as</span> <span class="nn">K</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">preprocessing</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;TF_CPP_MIN_LOG_LEVEL&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;3&#39;</span>
+
+<span class="k">class</span> <span class="nc">Classifier</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">vocab_size</span> <span class="o">=</span> <span class="mi">20000</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_length</span> <span class="o">=</span> <span class="mi">200</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">EMBEDDING_DIM</span> <span class="o">=</span> <span class="mi">100</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">enc</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">OneHotEncoder</span><span class="p">()</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;TF_CPP_MIN_LOG_LEVEL&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;3&#39;</span>
+        <span class="n">K</span><span class="o">.</span><span class="n">clear_session</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Embedding</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vocab_size</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">EMBEDDING_DIM</span><span class="p">,</span> <span class="n">input_length</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">max_length</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">SpatialDropout1D</span><span class="p">(</span><span class="mf">0.25</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">LSTM</span><span class="p">(</span><span class="mi">32</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s1">&#39;categorical_crossentropy&#39;</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">get_f1</span><span class="p">])</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;TF_CPP_MIN_LOG_LEVEL&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;3&#39;</span>
+
+    <span class="k">def</span> <span class="nf">get_f1</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">):</span>
+        
+        <span class="n">y_true</span> <span class="o">=</span> <span class="n">K</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">y_pred</span> <span class="o">=</span> <span class="n">K</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">y_pred</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        
+        <span class="n">prec_num</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">prec_den</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">recall_num</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">recall_den</span> <span class="o">=</span> <span class="mi">0</span>
+        
+        <span class="n">equal</span> <span class="o">=</span> <span class="n">K</span><span class="o">.</span><span class="n">equal</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+        <span class="n">not_equal</span> <span class="o">=</span> <span class="n">K</span><span class="o">.</span><span class="n">not_equal</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+        
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+            <span class="n">tmp</span> <span class="o">=</span> <span class="n">K</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">stack</span><span class="p">([</span><span class="n">equal</span><span class="p">,</span> <span class="n">K</span><span class="o">.</span><span class="n">equal</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">i</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="s1">&#39;int32&#39;</span><span class="p">))</span>
+            <span class="n">prec_num</span> <span class="o">+=</span> <span class="n">tmp</span>
+            <span class="n">prec_den</span> <span class="o">+=</span> <span class="n">tmp</span> <span class="o">+</span> <span class="n">K</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">stack</span><span class="p">([</span><span class="n">not_equal</span><span class="p">,</span> <span class="n">K</span><span class="o">.</span><span class="n">equal</span><span class="p">(</span><span class="n">y_pred</span><span class="p">,</span> <span class="n">i</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="s1">&#39;int32&#39;</span><span class="p">))</span>
+            <span class="n">recall_num</span> <span class="o">+=</span> <span class="n">tmp</span>
+            <span class="n">recall_den</span> <span class="o">+=</span> <span class="n">tmp</span> <span class="o">+</span> <span class="n">K</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">stack</span><span class="p">([</span><span class="n">not_equal</span><span class="p">,</span> <span class="n">K</span><span class="o">.</span><span class="n">equal</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">i</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="s1">&#39;int32&#39;</span><span class="p">))</span>
+            
+        <span class="n">prec_num</span> <span class="o">=</span> <span class="n">K</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">prec_num</span><span class="p">,</span> <span class="s1">&#39;float&#39;</span><span class="p">)</span>
+        <span class="n">prec_den</span> <span class="o">=</span> <span class="n">K</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">prec_den</span><span class="p">,</span> <span class="s1">&#39;float&#39;</span><span class="p">)</span>
+        <span class="n">recall_num</span> <span class="o">=</span> <span class="n">K</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">recall_num</span><span class="p">,</span> <span class="s1">&#39;float&#39;</span><span class="p">)</span>
+        <span class="n">recall_den</span> <span class="o">=</span> <span class="n">K</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">recall_den</span><span class="p">,</span> <span class="s1">&#39;float&#39;</span><span class="p">)</span>
+        
+        <span class="n">precision</span> <span class="o">=</span> <span class="n">prec_num</span> <span class="o">/</span> <span class="n">prec_den</span>
+        <span class="n">recall</span> <span class="o">=</span> <span class="n">recall_num</span> <span class="o">/</span> <span class="n">recall_den</span>
+        <span class="n">f1_val</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">precision</span> <span class="o">*</span> <span class="n">recall</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">precision</span> <span class="o">+</span> <span class="n">recall</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">f1_val</span>
+
+    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">enc</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">Y_train</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">enc</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;TF_CPP_MIN_LOG_LEVEL&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;3&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">Y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">predict_proba</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;TF_CPP_MIN_LOG_LEVEL&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;3&#39;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>ramp_test_submission 
 </pre></div>
 
     </div>
@@ -15155,27 +15402,37 @@ WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/ten
 WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:223: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
 
 	<span class="ansi-bold" style="color: rgb(215,175,0)">score  f1 score         time</span>
-	<span class="ansi-green-intense-fg ansi-bold">train</span>     <span class="ansi-green-intense-fg ansi-bold">0.528</span>  <span style="color: rgb(175,215,135)">3158.511521</span>
-	<span class="ansi-blue-intense-fg ansi-bold">valid</span>     <span class="ansi-blue-intense-fg ansi-bold">0.527</span>   <span style="color: rgb(135,135,255)">442.220310</span>
-	<span class="ansi-red-intense-fg ansi-bold">test</span>      <span class="ansi-red-intense-fg ansi-bold">0.486</span>   <span style="color: rgb(255,175,215)">145.573001</span>
+	<span class="ansi-green-intense-fg ansi-bold">train</span>     <span class="ansi-green-intense-fg ansi-bold">0.507</span>  <span style="color: rgb(175,215,135)">2333.597978</span>
+	<span class="ansi-blue-intense-fg ansi-bold">valid</span>     <span class="ansi-blue-intense-fg ansi-bold">0.507</span>   <span style="color: rgb(135,135,255)">377.271598</span>
+	<span class="ansi-red-intense-fg ansi-bold">test</span>      <span class="ansi-red-intense-fg ansi-bold">0.476</span>   <span style="color: rgb(255,175,215)">126.435108</span>
 <span class="ansi-bold" style="color: rgb(215,175,0)">CV fold 1</span>
 	<span class="ansi-bold" style="color: rgb(215,175,0)">score  f1 score         time</span>
-	<span class="ansi-green-intense-fg ansi-bold">train</span>     <span class="ansi-green-intense-fg ansi-bold">0.471</span>  <span style="color: rgb(175,215,135)">1461.698390</span>
-	<span class="ansi-blue-intense-fg ansi-bold">valid</span>     <span class="ansi-blue-intense-fg ansi-bold">0.469</span>   <span style="color: rgb(135,135,255)">348.001404</span>
-	<span class="ansi-red-intense-fg ansi-bold">test</span>      <span class="ansi-red-intense-fg ansi-bold">0.464</span>   <span style="color: rgb(255,175,215)">116.124759</span>
+	<span class="ansi-green-intense-fg ansi-bold">train</span>     <span class="ansi-green-intense-fg ansi-bold">0.497</span>  <span style="color: rgb(175,215,135)">2347.471491</span>
+	<span class="ansi-blue-intense-fg ansi-bold">valid</span>     <span class="ansi-blue-intense-fg ansi-bold">0.497</span>   <span style="color: rgb(135,135,255)">367.431516</span>
+	<span class="ansi-red-intense-fg ansi-bold">test</span>      <span class="ansi-red-intense-fg ansi-bold">0.471</span>   <span style="color: rgb(255,175,215)">125.013485</span>
+<span class="ansi-bold" style="color: rgb(215,175,0)">CV fold 2</span>
+	<span class="ansi-bold" style="color: rgb(215,175,0)">score  f1 score         time</span>
+	<span class="ansi-green-intense-fg ansi-bold">train</span>     <span class="ansi-green-intense-fg ansi-bold">0.511</span>  <span style="color: rgb(175,215,135)">2324.469800</span>
+	<span class="ansi-blue-intense-fg ansi-bold">valid</span>     <span class="ansi-blue-intense-fg ansi-bold">0.512</span>   <span style="color: rgb(135,135,255)">372.488616</span>
+	<span class="ansi-red-intense-fg ansi-bold">test</span>      <span class="ansi-red-intense-fg ansi-bold">0.489</span>   <span style="color: rgb(255,175,215)">124.265731</span>
+<span class="ansi-bold" style="color: rgb(215,175,0)">CV fold 3</span>
+	<span class="ansi-bold" style="color: rgb(215,175,0)">score  f1 score         time</span>
+	<span class="ansi-green-intense-fg ansi-bold">train</span>     <span class="ansi-green-intense-fg ansi-bold">0.535</span>  <span style="color: rgb(175,215,135)">2339.621962</span>
+	<span class="ansi-blue-intense-fg ansi-bold">valid</span>     <span class="ansi-blue-intense-fg ansi-bold">0.532</span>   <span style="color: rgb(135,135,255)">378.818315</span>
+	<span class="ansi-red-intense-fg ansi-bold">test</span>      <span class="ansi-red-intense-fg ansi-bold">0.528</span>   <span style="color: rgb(255,175,215)">124.835876</span>
 <span class="ansi-bold" style="color: rgb(215,175,0)">----------------------------</span>
 <span class="ansi-bold" style="color: rgb(215,175,0)">Mean CV scores</span>
 <span class="ansi-bold" style="color: rgb(215,175,0)">----------------------------</span>
-	<span class="ansi-bold" style="color: rgb(215,175,0)">score        f1 score             time</span>
-	<span class="ansi-green-intense-fg ansi-bold">train</span>  <span class="ansi-green-intense-fg ansi-bold">0.499</span> <span style="color: rgb(175,215,135)">±</span> <span style="color: rgb(175,215,135)">0.0286</span>  <span style="color: rgb(175,215,135)">2310.1</span> <span style="color: rgb(175,215,135)">±</span> <span style="color: rgb(175,215,135)">848.41</span>
-	<span class="ansi-blue-intense-fg ansi-bold">valid</span>  <span class="ansi-blue-intense-fg ansi-bold">0.498</span> <span style="color: rgb(135,135,255)">±</span> <span style="color: rgb(135,135,255)">0.0292</span>    <span style="color: rgb(135,135,255)">395.1</span> <span style="color: rgb(135,135,255)">±</span> <span style="color: rgb(135,135,255)">47.11</span>
-	<span class="ansi-red-intense-fg ansi-bold">test</span>   <span class="ansi-red-intense-fg ansi-bold">0.475</span> <span style="color: rgb(255,175,215)">±</span> <span style="color: rgb(255,175,215)">0.0111</span>    <span style="color: rgb(255,175,215)">130.8</span> <span style="color: rgb(255,175,215)">±</span> <span style="color: rgb(255,175,215)">14.72</span>
+	<span class="ansi-bold" style="color: rgb(215,175,0)">score        f1 score           time</span>
+	<span class="ansi-green-intense-fg ansi-bold">train</span>   <span class="ansi-green-intense-fg ansi-bold">0.512</span> <span style="color: rgb(175,215,135)">±</span> <span style="color: rgb(175,215,135)">0.014</span>  <span style="color: rgb(175,215,135)">2336.3</span> <span style="color: rgb(175,215,135)">±</span> <span style="color: rgb(175,215,135)">8.41</span>
+	<span class="ansi-blue-intense-fg ansi-bold">valid</span>  <span class="ansi-blue-intense-fg ansi-bold">0.512</span> <span style="color: rgb(135,135,255)">±</span> <span style="color: rgb(135,135,255)">0.0128</span>   <span style="color: rgb(135,135,255)">374.0</span> <span style="color: rgb(135,135,255)">±</span> <span style="color: rgb(135,135,255)">4.45</span>
+	<span class="ansi-red-intense-fg ansi-bold">test</span>   <span class="ansi-red-intense-fg ansi-bold">0.491</span> <span style="color: rgb(255,175,215)">±</span> <span style="color: rgb(255,175,215)">0.0224</span>    <span style="color: rgb(255,175,215)">125.1</span> <span style="color: rgb(255,175,215)">±</span> <span style="color: rgb(255,175,215)">0.8</span>
 <span class="ansi-bold" style="color: rgb(215,175,0)">----------------------------</span>
 <span class="ansi-bold" style="color: rgb(215,175,0)">Bagged scores</span>
 <span class="ansi-bold" style="color: rgb(215,175,0)">----------------------------</span>
 	<span class="ansi-bold" style="color: rgb(215,175,0)">score  f1 score</span>
-	<span class="ansi-blue-intense-fg ansi-bold">valid</span>     <span class="ansi-blue-intense-fg ansi-bold">0.502</span>
-	<span class="ansi-red-intense-fg ansi-bold">test</span>      <span class="ansi-red-intense-fg ansi-bold">0.482</span>
+	<span class="ansi-blue-intense-fg ansi-bold">valid</span>     <span class="ansi-blue-intense-fg ansi-bold">0.518</span>
+	<span class="ansi-red-intense-fg ansi-bold">test</span>      <span class="ansi-red-intense-fg ansi-bold">0.478</span>
 </pre>
 </div>
 </div>
